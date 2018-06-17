@@ -1,0 +1,97 @@
+body, html, * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI", Roboto,Oxygen,Ubuntu,Cantarell,sans-serif;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.languagesWrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.languages {
+    display: inline-flex;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.languages li {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.languages li:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+.languages li.highlight {
+    color: brown;
+}
+
+.languages li:hover {
+    cursor: pointer;
+    color: brown;
+}
+
+.languages li.highlight:hover {
+    cursor: default;
+}
+
+.resultWrapper {
+    height: 500px;
+    overflow: auto;
+    width: 910px;
+    margin: 0 auto;
+}
+
+.loading {
+    display: none;
+}
+
+.show {
+    display: block;
+
+}
+
+.hide {
+    display: none;
+}
+
+#result ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#result ul li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 160px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    padding: 20px;
+}
+
+#result ul li span:first-child {
+    margin-bottom: 13px;
+}
+
+#result ul li img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 13px;
+}
